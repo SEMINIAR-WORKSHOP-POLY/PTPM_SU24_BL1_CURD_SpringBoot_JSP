@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/PTPM_SU24_BL1_CURD_SpringBoot_JSP.iml" filepath="$PROJECT_DIR$/.idea/PTPM_SU24_BL1_CURD_SpringBoot_JSP.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sof3021.iml" filepath="$PROJECT_DIR$/sof3021.iml" />
     </modules>
   </component>
 </project>

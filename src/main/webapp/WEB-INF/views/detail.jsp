@@ -14,31 +14,35 @@
     <div class="container">
         <div class="mb-3">
             <label class="form-label">Mã</label>
-            <span></span>
+            <span>${mayTinh.ma}</span>
         </div>
         <div class="mb-3">
             <label class="form-label">Tên</label>
-            <span></span>
+            <span>${mayTinh.ten}</span>
         </div>
         <div class="mb-3">
             <label class="form-label">Giá</label>
-            <span></span>
+            <span>${mayTinh.gia}</span>
         </div>
         <div class="mb-3">
             <label class="form-label">Bộ nhớ </label>
-            <span></span>
+            <span>${mayTinh.boNho}</span>
         </div>
         <div class="mb-3">
             <label class="form-label">Màu sắc </label>
-            <span></span>
+            <span>${mayTinh.mauSac}</span>
         </div>
         <div class="mb-3">
-            <label class="form-label">Hãng </label>
-            <span></span>
+            <label class="form-label">Mã Hãng </label>
+            <span>${mayTinh.hang.ma}</span>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Tên Hãng </label>
+            <span>${mayTinh.hang.tenHang}</span>
         </div>
         <div class="mb-3">
             <label class="form-label">Mô tả</label>
-            <span></span>
+            <span>${mayTinh.mieuTa}</span>
         </div>
     </div>
 </main>

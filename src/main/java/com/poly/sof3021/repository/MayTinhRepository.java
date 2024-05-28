@@ -1,4 +1,9 @@
 package com.poly.sof3021.repository;
 
-public interface MayTinhRepository {
+import com.poly.sof3021.entity.MayTinh;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface MayTinhRepository extends JpaRepository<MayTinh, Long> {
 }

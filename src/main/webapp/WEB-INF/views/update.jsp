@@ -11,42 +11,43 @@
 <body>
 <header><h2 style="text-align: center;">Sửa Máy Tính</h2></header>
 <main>
-    <form action="#" method="post" class="container">
+    <form action="/may-tinh/update?id=${mayTinh.id}" method="post" class="container">
         <div class="mb-3">
             <label class="form-label">Mã</label>
-            <input type="text" class="form-control" name="ma">
+            <input type="text" class="form-control" name="ma" value="${mayTinh.ma}">
         </div>
         <div class="mb-3">
             <label class="form-label">Tên</label>
-            <input type="text" class="form-control" name="ten">
+            <input type="text" class="form-control" name="ten" value="${mayTinh.ten}">
         </div>
         <div class="mb-3">
             <label class="form-label">Giá</label>
-            <input type="text" class="form-control" name="gia">
+            <input type="text" class="form-control" name="gia" value="${mayTinh.gia}">
         </div>
         <div class="mb-3">
             <label class="form-label">Bộ nhớ </label>
             <select name="boNho">
-                <option value="128GB">128GB</option>
-                <option value="256GB">256GB</option>
-                <option value="512GB">512GB</option>
-                <option value="1TB">1TB</option>
+                <option value="128GB" ${mayTinh.boNho == "128GB" ? "selected" : ""}>128GB</option>
+                <option value="256GB" ${mayTinh.boNho == "256GB" ? "selected" : ""}>256GB</option>
+                <option value="512GB" ${mayTinh.boNho == "512GB" ? "selected" : ""}>512GB</option>
+                <option value="1TB" ${mayTinh.boNho == "1TB" ? "selected" : ""}>1TB</option>
             </select>
         </div>
         <div class="mb-3">
             <label class="form-label">Màu sắc </label>
-            <input type="radio" name="mauSac" value="Đen" checked>Đen
-            <input type="radio" name="mauSac" value="Bạc">Bạc
+            <input type="radio" name="mauSac" value="Đen" ${mayTinh.mauSac == "Đen" ? "checked" : ""} checked>Đen
+            <input type="radio" name="mauSac" value="Bạc" ${mayTinh.mauSac == "Bạc" ? "checked" : ""}>Bạc
         </div>
         <div class="mb-3">
             <label class="form-label">Hãng </label>
             <select name="hang">
-                <option value="256GB">256GB</option>
-            </select>
-        </div>
+                <c:forEach items="${hangs }" var="h">
+                    <option value="${h.id}" ${h.id == mayTinh.hang.id ? 'selected="selected"' : ''}>${h.tenHang}</option>
+                </c:forEach>
+            </select></div>
         <div class="mb-3">
             <label class="form-label">Mô tả</label>
-            <input type="text" class="form-control" name="moTa">
+            <input type="text" class="form-control" name="moTa" value="${mayTinh.mieuTa}">
         </div>
         <button class="btn btn-success" type="submit">Update</button>
     </form>

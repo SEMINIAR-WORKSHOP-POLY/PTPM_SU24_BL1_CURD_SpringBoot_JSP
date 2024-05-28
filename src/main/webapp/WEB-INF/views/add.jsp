@@ -11,7 +11,7 @@
 <body>
 <header><h2 style="text-align: center;">Thêm Máy Tính</h2></header>
 <main>
-    <form action="#" method="post" class="container">
+    <form action="/may-tinh/add" method="post" class="container">
         <div class="mb-3">
             <label class="form-label">Mã</label>
             <input type="text" class="form-control" name="ma">
@@ -39,10 +39,14 @@
             <input type="radio" name="mauSac" value="Bạc">Bạc
         </div>
         <div class="mb-3">
+            <br>
             <label class="form-label">Hãng </label>
             <select name="hang">
-                <option value="256GB">256GB</option>
+                <c:forEach items="${hangs }" var="h">
+                    <option value="${h.id}">${h.tenHang}</option>
+                </c:forEach>
             </select>
+            <br>
         </div>
         <div class="mb-3">
             <label class="form-label">Mô tả</label>

@@ -8,15 +8,18 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="PTPM_SU24_BL1_CURD_SpringBoot_JSP" />
+        <module name="sof3021" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="PTPM_SU24_BL1_CURD_SpringBoot_JSP" target="17" />
+      <module name="sof3021" target="17" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="PTPM_SU24_BL1_CURD_SpringBoot_JSP" options="-parameters" />
+      <module name="sof3021" options="-parameters" />
     </option>
   </component>
 </project>
